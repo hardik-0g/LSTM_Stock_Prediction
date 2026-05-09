@@ -1,31 +1,62 @@
-LSTM Stock Price Prediction 📈
+# LSTM Stock Price Prediction 📈
 
-A deep learning-based stock price prediction web application built using LSTM (Long Short-Term Memory) neural networks, TensorFlow, and Streamlit. This project predicts stock price trends using historical market data and visualizes predictions interactively.
+A deep learning-based stock market prediction web application built using **LSTM (Long Short-Term Memory)** neural networks, **TensorFlow/Keras**, and **Streamlit**. The application analyzes historical stock market data and predicts future stock price trends using sequential time-series forecasting techniques.
 
-🚀 Live Demo:- https://lstm-stock-prediction-pxk3.onrender.com/
+## 🚀 Live Demo
 
+https://lstm-stock-prediction-pxk3.onrender.com
 
+---
 
-📌 Features
-Predict stock prices using LSTM deep learning model
-Interactive Streamlit web interface
-Real-time stock data using Yahoo Finance API
-Historical stock price visualization
-Moving averages visualization
-Predicted vs Actual price comparison
-Clean and responsive UI
-Cloud deployed on Render
-🛠️ Tech Stack
-Python
-TensorFlow / Keras
-Streamlit
-Pandas
-NumPy
-Matplotlib
-Scikit-learn
-Yahoo Finance API
+## 📌 Overview
 
-📂 Project Structure
+This project uses an LSTM-based recurrent neural network trained on historical stock price data to predict future closing prices. The model learns temporal dependencies and sequential market patterns from previous stock movements.
+
+The application fetches real-time stock data using Yahoo Finance and provides interactive visualizations for analysis and prediction.
+
+---
+
+## 🧠 Deep Learning Concepts Used
+
+- Long Short-Term Memory (LSTM)
+- Recurrent Neural Networks (RNN)
+- Time Series Forecasting
+- Sequential Data Modeling
+- Sliding Window Technique
+- Data Normalization using MinMaxScaler
+
+---
+
+## ⚙️ Features
+
+- Real-time stock data fetching
+- LSTM-based stock price prediction
+- Historical data visualization
+- 100-Day & 200-Day Moving Average graphs
+- Predicted vs Actual price comparison
+- Interactive Streamlit UI
+- Cloud deployment on Render
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| Python | Core Programming |
+| TensorFlow / Keras | Deep Learning |
+| Streamlit | Web Interface |
+| Pandas | Data Processing |
+| NumPy | Numerical Computation |
+| Matplotlib | Visualization |
+| Scikit-learn | Data Scaling |
+| Yahoo Finance API | Stock Data |
+
+---
+
+## 📂 Project Structure
+
+```bash
 LSTM_Stock_Prediction/
 │
 ├── app.py
@@ -34,61 +65,99 @@ LSTM_Stock_Prediction/
 ├── runtime.txt
 ├── .python-version
 └── README.md
-⚙️ Installation
+```
+
+---
+
+## 🔄 Workflow
+
+```text
+User Input → Yahoo Finance API → Data Preprocessing →
+Normalization → Sequence Generation →
+LSTM Prediction → Visualization
+```
+
+---
+
+## 🚀 Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/hardik-0g/LSTM_Stock_Prediction.git
+```
 
-Move into project directory:
+Move into the project directory:
 
+```bash
 cd LSTM_Stock_Prediction
+```
 
 Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
-Run the application:
+Run the Streamlit app:
 
+```bash
 streamlit run app.py
-📊 How It Works
-User enters stock ticker symbol
-Historical stock data is fetched using Yahoo Finance
-Data is preprocessed and normalized
-LSTM neural network predicts stock trends
-Predictions are visualized with charts and graphs
-🧠 About LSTM
+```
 
-LSTM (Long Short-Term Memory) is a type of recurrent neural network (RNN) specially designed for sequential and time-series data prediction tasks. It is widely used in stock forecasting because it can learn long-term dependencies from historical market data.
+---
 
-🌐 Deployment
+## 📊 Example Stocks
 
-This application is deployed on Render using:
+You can test predictions using:
+- AAPL
+- TSLA
+- NVDA
+- GOOGL
+- MSFT
 
-Python 3.11
-Streamlit
-TensorFlow CPU version
-📈 Example Stock Visualization
+---
 
-Popular stocks you can test:
+## 🌐 Deployment
 
-AAPL
-TSLA
-MSFT
-GOOGL
-NVDA
-🤝 Contribution
+The application is deployed on Render using:
+- Python 3.11
+- Streamlit
+- TensorFlow CPU
 
-Contributions, suggestions, and improvements are welcome.
+---
 
-Fork the repository and create a pull request.
+## 📌 Future Improvements
 
-👨‍💻 Author
+- Multi-stock forecasting
+- Transformer-based prediction models
+- Sentiment analysis integration
+- Real-time streaming data
+- Advanced technical indicators
 
-Hardik Jaiswal
+---
 
-GitHub: hardik-0g
+## ⚠️ Disclaimer
 
-⭐ Support
+This project is built for educational and research purposes only. Stock market predictions are uncertain and should not be considered financial advice.
+
+---
+
+## 👨‍💻 Author
+
+**Hardik Jaiswal**
+
+GitHub:  
+https://github.com/hardik-0g
+
+**Kalpit Yadav**
+
+GitHub:
+https://github.com/kalpit71
+
+
+---
+
+## ⭐ Support
 
 If you found this project useful, consider giving it a star on GitHub.
